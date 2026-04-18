@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laurence McDonald | AI Engineer</title>
-    <meta name="description" content="AI Engineer with 6+ years in Data Science, specializing in machine learning, advanced analytics, and AI solutions.">
+    <title>Laurence McDonald | Sports Data Scientist</title>
+    <meta name="description" content="Sports Data Scientist with 8+ years building predictive models at scale. Currently leading England Rugby's advanced analytics capability. MSc Theoretical Physics, King's College London.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">Laurence McDonald</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+            <a href="#home" class="nav-logo">LM</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about"      class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#research"   class="nav-link">Research</a></li>
+                <li><a href="#skills"     class="nav-link">Skills</a></li>
+                <li><a href="#education"  class="nav-link">Education</a></li>
+                <li><a href="#contact"    class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="greeting">Hello, I'm</span>
-                    <span class="name">Laurence McDonald</span>
-                    <span class="role">AI Engineer & Data Science Expert</span>
-                </h1>
+                <p class="hero-label">Sports Data Scientist</p>
+                <h1 class="hero-title">Laurence<br>McDonald</h1>
                 <p class="hero-subtitle">
-                    Transforming complex data into intelligent solutions with 6+ years of experience in 
-                    machine learning, advanced analytics, and AI implementation across sports and other indistries.
+                    Building predictive models where data shapes the game — from grassroots participation to elite performance and player decision-making research.
                 </p>
+                <div class="hero-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> London, UK</span>
+                    <span><i class="fas fa-building"></i> England Rugby (RFU)</span>
+                    <span><i class="fas fa-flask"></i> PhD Proposal</span>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
-                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                    <a href="#research" class="btn btn-primary">View Research</a>
+                    <a href="#contact"  class="btn btn-outline">Get In Touch</a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/lm12abh/ResearchDevelopment" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/lm12abh" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:l.a.c.mcdonald@gmail.com" aria-label="Email">
@@ -72,488 +62,394 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-animation">
-                    <div class="code-line">
-                        <span class="code-keyword">import</span> 
-                        <span class="code-module">tensorflow</span> 
-                        <span class="code-keyword">as</span> 
-                        <span class="code-variable">tf</span>
+                <div class="code-window">
+                    <div class="code-titlebar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="code-filename">decision_quality.py</span>
                     </div>
-                    <div class="code-line">
-                        <span class="code-keyword">from</span> 
-                        <span class="code-module">sklearn.ensemble</span> 
-                        <span class="code-keyword">import</span> 
-                        <span class="code-class">RandomForest</span>
-                    </div>
-                    <div class="code-line">
-                        <span class="code-comment"># Building intelligent solutions</span>
-                    </div>
-                    <div class="code-line">
-                        <span class="code-variable">success</span> 
-                        <span class="code-operator">=</span> 
-                        <span class="code-function">hire_data_scientist</span><span class="code-punctuation">()</span>
+                    <div class="code-body">
+                        <div class="code-line"><span class="c-comment"># Quantifying player decision-making</span></div>
+                        <div class="code-line"><span class="c-keyword">import</span> <span class="c-module">torch</span></div>
+                        <div class="code-line"><span class="c-keyword">from</span> <span class="c-module">torch</span> <span class="c-keyword">import</span> <span class="c-module">nn</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"><span class="c-keyword">class</span> <span class="c-class">DecisionQualityNet</span><span class="c-punc">(</span><span class="c-module">nn.Module</span><span class="c-punc">):</span></div>
+                        <div class="code-line">    <span class="c-string">"""Score decision quality given</span></div>
+                        <div class="code-line">    <span class="c-string">   spatial &amp; tactical context"""</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line">    <span class="c-keyword">def</span> <span class="c-fn">forward</span><span class="c-punc">(</span><span class="c-var">self</span><span class="c-punc">,</span> <span class="c-var">context</span><span class="c-punc">):</span></div>
+                        <div class="code-line">        <span class="c-comment"># Beyond outcome metrics</span></div>
+                        <div class="code-line">        <span class="c-keyword">return</span> <span class="c-var">self</span><span class="c-punc">.</span><span class="c-fn">score_decision</span><span class="c-punc">(</span><span class="c-var">context</span><span class="c-punc">)</span><span class="typing-cursor">_</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="about-image">
+                    <img src="./data/ResumeImage.jpeg" alt="Laurence McDonald — Sports Data Scientist" class="profile-image">
+                </div>
                 <div class="about-text">
+                    <span class="section-label">About</span>
+                    <h2 class="section-heading">Sports analytics<br>at every level</h2>
                     <p class="about-intro">
-                        Accomplished AI Engineer and Data Scientist with extensive experience in applying advanced 
-                        analytical techniques to solve complex business problems through machine learning, predictive 
-                        modeling, and AI solution implementation.
+                        Data Scientist with 8+ years building and deploying predictive models at scale, currently leading England Rugby's first advanced analytics capability. Deep expertise in machine learning, deep learning, and statistical modelling — grounded in an MSc in Theoretical Physics — paired with a lifelong passion for sport.
                     </p>
                     <p>
-                        Currently leading the Advanced Analytics team at England Rugby, I've successfully transitioned 
-                        from traditional data science roles in financial services to cutting-edge AI engineering, 
-                        focusing on MLOps, model deployment, and scalable AI infrastructure.
+                        At the RFU, I built player retention models, segmentation frameworks, and demand forecasts that directly shape how English rugby grows and competes. At Barclays, I designed neural networks, gradient-boosted classifiers, and Markov-chain lifecycle models across millions of customers — skills that translate directly to profiling, recruitment, and performance modelling in sport.
                     </p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-brain"></i>
-                            <h3>AI Innovation</h3>
-                            <p>Designing AI strategies and implementing machine learning solutions at scale</p>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-rocket"></i>
-                            <h3>MLOps Excellence</h3>
-                            <p>Building robust ML pipelines using Docker, AWS, and modern DevOps practices</p>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>Business Impact</h3>
-                            <p>Delivered £40M+ in value through predictive models and analytics solutions</p>
-                        </div>
+                    <p>
+                        Now actively pursuing original research at the intersection of deep learning and sports performance, developing a PhD proposal focused on quantifying player decision-making effectiveness using neural networks. Ready to bring production ML engineering, sports domain knowledge, and research ambition to a team where data and AI directly shape the game.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Rugby</span>
+                        <span class="tag">Football</span>
+                        <span class="tag">Tennis</span>
+                        <span class="tag">Climbing</span>
+                        <span class="tag">Cycling</span>
+                        <span class="tag">Surfing</span>
+                        <span class="tag">Hiking</span>
+                        <span class="tag">Photography</span>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="./data/ResumeImage.jpeg" alt="Laurence McDonald - AI Engineer" class="profile-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Advanced Analytics Lead</h3>
-                            <span class="company">England Rugby</span>
-                            <span class="period">May 2024 — Present</span>
-                        </div>
-                        <div class="timeline-description">
-                            <p>Leading AI transformation initiatives and advanced analytics team to optimize performance and engagement.</p>
-                            <ul class="achievements">
-                                <li><strong>AI Strategy:</strong> Designed organizational approach for AI integration and MLOps implementation</li>
-                                <li><strong>Feature Store:</strong> Built commercial data asset using Python, Docker, and AWS ECS for scalable analytics</li>
-                                <li><strong>ML Pipeline:</strong> Implemented agile ML workflows with GitHub, Jira, and AWS infrastructure</li>
-                                <li><strong>Segmentation:</strong> Developed decision tree-based customer segmentation for targeted campaigns</li>
-                            </ul>
-                            <div class="tech-stack">
-                                <span class="tech">Python</span>
-                                <span class="tech">Docker</span>
-                                <span class="tech">AWS ECS</span>
-                                <span class="tech">MLOps</span>
-                                <span class="tech">GitHub Actions</span>
-                            </div>
+            <span class="section-label">Career</span>
+            <h2 class="section-heading">Experience</h2>
+
+            <!-- England Rugby — Current -->
+            <div class="exp-card exp-card--current reveal">
+                <div class="exp-header">
+                    <div class="exp-title-block">
+                        <span class="badge-current">Current</span>
+                        <h3 class="exp-role">Advanced Analytics Lead</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company">England Rugby (RFU)</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-location">Twickenham</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-period">May 2024 — Present</span>
                         </div>
                     </div>
                 </div>
+                <p class="exp-summary">Founded and lead the RFU's first advanced analytics capability, building a cross-functional scrum team focused on player, fan, and volunteer data. Own the organisation's player analytics strategy and drive the integration of AI into everyday decision-making.</p>
+                <ul class="exp-bullets">
+                    <li>Survival-analysis &amp; gradient-boosted propensity models identifying at-risk players and volunteers, directly informing participation growth strategy</li>
+                    <li>Multi-dimensional player segmentation across age-grade, level, and position cohorts — powering personalisation and resource allocation across 2,000+ clubs</li>
+                    <li>Dynamic match-attendance &amp; price-elasticity forecasting models combining historical ticketing, fixture, and macro variables</li>
+                    <li>Markov-chain player value trajectories informing grassroots investment decisions</li>
+                    <li>RAG agent (LangChain, Claude, AWS) exposing curated rugby datasets to non-technical stakeholders</li>
+                    <li>Python/Docker/AWS-ECS feature store consolidating player participation, engagement, and ticketing KPIs; internal Python package for analyst exploration</li>
+                    <li>End-to-end ML infrastructure on AWS SageMaker, S3, Athena, Glue; CI/CD via GitHub Actions</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech">Python</span>
+                    <span class="tech">AWS SageMaker</span>
+                    <span class="tech">Docker</span>
+                    <span class="tech">LangChain</span>
+                    <span class="tech">Survival Analysis</span>
+                    <span class="tech">XGBoost</span>
+                    <span class="tech">GitHub Actions</span>
+                    <span class="tech">RAG</span>
+                    <span class="tech">Markov Chains</span>
+                </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Scientist</h3>
-                            <span class="company">Barclays</span>
-                            <span class="period">November 2018 — April 2024</span>
-                        </div>
-                        <div class="timeline-description">
-                            <p>Advanced analytics consultant creating ML solutions and data assets across multiple business units.</p>
-                            <ul class="achievements">
-                                <li><strong>ML Models:</strong> Built gradient boosted models with £40M expected uplift using Spark MLlib</li>
-                                <li><strong>Deep Learning:</strong> Implemented RNN with attention mechanism for marketing effectiveness analysis</li>
-                                <li><strong>Big Data:</strong> Processed billions of events using PySpark and Hadoop infrastructure</li>
-                                <li><strong>Markov Chains:</strong> Developed customer transition forecasting models for strategic planning</li>
-                            </ul>
-                            <div class="tech-stack">
-                                <span class="tech">PySpark</span>
-                                <span class="tech">TensorFlow</span>
-                                <span class="tech">Hadoop</span>
-                                <span class="tech">Spark MLlib</span>
-                                <span class="tech">Deep Learning</span>
-                            </div>
+            <!-- Barclays -->
+            <div class="exp-card reveal">
+                <div class="exp-header">
+                    <div class="exp-title-block">
+                        <h3 class="exp-role">Data Scientist</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company">Barclays</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-location">London</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-period">Nov 2018 — Apr 2024</span>
                         </div>
                     </div>
                 </div>
+                <p class="exp-summary">Embedded within Barclays' Analytics Centre of Excellence, delivering large-scale ML solutions for a retail customer base of millions. Built directly transferable skills in profiling, lifecycle modelling, and behavioural event-sequence analysis.</p>
+                <ul class="exp-bullets">
+                    <li>Gradient-boosted classification model (Spark MLlib) projecting <strong>£40M uplift</strong> — directly analogous to identifying high-ceiling players for recruitment pipelines</li>
+                    <li>Markov-chain lifecycle framework (PySpark) mapping state transitions with probabilistic forecasts — applicable to modelling player development arcs</li>
+                    <li>Causal and correlational analysis across billions of event-level digital interactions — equivalent to mining tracking-data event sequences for tactical insight</li>
+                    <li>RNN with attention mechanism for sequenced communication impact — demonstrates capability with temporal, sequential data akin to sports tracking feeds</li>
+                    <li>Designed and shipped company-wide customer segmentation in PySpark/Hadoop</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech">PySpark</span>
+                    <span class="tech">Spark MLlib</span>
+                    <span class="tech">TensorFlow</span>
+                    <span class="tech">Hadoop</span>
+                    <span class="tech">Markov Chains</span>
+                    <span class="tech">RNN</span>
+                    <span class="tech">Deep Learning</span>
+                </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Data Analyst</h3>
-                            <span class="company">Suncorp Group</span>
-                            <span class="period">August 2016 — August 2018</span>
+            <!-- Suncorp -->
+            <div class="exp-card reveal">
+                <div class="exp-header">
+                    <div class="exp-title-block">
+                        <h3 class="exp-role">Data Analyst</h3>
+                        <div class="exp-meta">
+                            <span class="exp-company">Suncorp Group</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-location">Sydney, Australia</span>
+                            <span class="exp-sep">·</span>
+                            <span class="exp-period">Aug 2016 — Aug 2018</span>
                         </div>
-                        <div class="timeline-description">
-                            <p>Developed risk management models and conducted regulatory compliance analysis.</p>
-                            <ul class="achievements">
-                                <li><strong>Risk Modeling:</strong> Built Key Risk Indicator models for automated anomaly detection</li>
-                                <li><strong>Regulatory Analysis:</strong> Led Royal Commission analysis for financial advice compliance</li>
-                                <li><strong>Dashboard Development:</strong> Created stakeholder reporting solutions for risk management</li>
-                            </ul>
-                            <div class="tech-stack">
-                                <span class="tech">Python</span>
-                                <span class="tech">Risk Modeling</span>
-                                <span class="tech">Tableau</span>
-                                <span class="tech">Statistical Analysis</span>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Key Risk Indicator framework with interactive executive dashboard for risk management reporting</li>
+                    <li>Regulatory analysis on financial advice data, reporting findings to senior leadership</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech">Python</span>
+                    <span class="tech">Tableau</span>
+                    <span class="tech">Statistical Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="research">
+        <div class="container">
+            <span class="section-label section-label--light">Research &amp; Projects</span>
+            <h2 class="section-heading section-heading--light">Pushing the frontier</h2>
+
+            <!-- PhD Proposal — Featured -->
+            <div class="research-featured reveal">
+                <div class="research-featured-badge">PhD Proposal</div>
+                <h3 class="research-featured-title">Quantifying Player Decision-Making Effectiveness</h3>
+                <p class="research-featured-desc">
+                    Developing a research framework that uses neural networks to evaluate the quality of decisions made by players within in-game situations — moving beyond outcome-based metrics (goals, assists) to assess whether a player's choice (passing, dribbling, shooting) was <em>optimal</em> given the spatial and tactical context. Draws on event and tracking data, contextual feature engineering, and sequence modelling to isolate <em>decision quality</em> from <em>execution quality</em>.
+                </p>
+                <p class="research-featured-desc">
+                    Directly applicable to scouting, tactical analysis, and player development — answering not just <em>what happened</em>, but <em>was it the right call?</em>
+                </p>
+                <div class="research-featured-tags">
+                    <span class="tag tag--light">Neural Networks</span>
+                    <span class="tag tag--light">Event Data</span>
+                    <span class="tag tag--light">Tracking Data</span>
+                    <span class="tag tag--light">Sequence Modelling</span>
+                    <span class="tag tag--light">Spatial Context</span>
+                    <span class="tag tag--light">PyTorch</span>
+                    <span class="tag tag--light">Feature Engineering</span>
+                </div>
+            </div>
+
+            <!-- Research Grid -->
+            <div class="research-grid">
+                <div class="research-card reveal">
+                    <div class="research-card-label">MSc Dissertation · KCL</div>
+                    <h3>Higgs Boson Signal Detection</h3>
+                    <p>Applied deep neural networks to simulated CERN collision data to classify signal vs. background events from billions of candidates — directly analogous to player-event classification from tracking data.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Deep Learning</span>
+                        <span class="tech">Classification</span>
+                        <span class="tech">Signal Processing</span>
+                    </div>
+                </div>
+
+                <div class="research-card reveal">
+                    <div class="research-card-label">England Rugby</div>
+                    <h3>Propensity-to-Participate Models</h3>
+                    <p>Predictive models identifying grassroots participants most likely to convert to playing or volunteering, combining survival analysis and gradient-boosted propensity scoring across 2,000+ clubs.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Survival Analysis</span>
+                        <span class="tech">XGBoost</span>
+                        <span class="tech">AWS SageMaker</span>
+                    </div>
+                </div>
+
+                <div class="research-card reveal">
+                    <div class="research-card-label">England Rugby</div>
+                    <h3>Price Elasticity &amp; Demand Forecasting</h3>
+                    <p>Econometric demand modelling for match tickets using historical transaction data, fixture characteristics, and macro variables. Combines price-elasticity curves with dynamic forecasting.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Econometrics</span>
+                        <span class="tech">Time Series</span>
+                        <span class="tech">Python</span>
+                    </div>
+                </div>
+
+                <div class="research-card reveal">
+                    <div class="research-card-label">Barclays</div>
+                    <h3>Markov-Chain Lifecycle Framework</h3>
+                    <p>PySpark implementation mapping customer state transitions with probabilistic forecasts. The same architecture applies directly to modelling player development arcs and career-stage transitions.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Markov Chains</span>
+                        <span class="tech">PySpark</span>
+                        <span class="tech">Probabilistic Modelling</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">AI Engineering Skills</h2>
+            <span class="section-label">Technical Profile</span>
+            <h2 class="section-heading">Skills</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Machine Learning & AI</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">TensorFlow/PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Scikit-learn</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Deep Learning</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MLOps</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Languages &amp; Frameworks</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Python</span>
+                        <span class="chip">PySpark</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">TensorFlow</span>
+                        <span class="chip">PyTorch</span>
+                        <span class="chip">Keras</span>
+                        <span class="chip">Scikit-learn</span>
+                        <span class="chip">XGBoost</span>
+                        <span class="chip">LangChain</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">AWS (ECS, Lambda, S3)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Docker/Kubernetes</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Apache Spark</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CI/CD Pipelines</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Cloud &amp; MLOps</h3>
+                    <div class="skill-chips">
+                        <span class="chip">AWS SageMaker</span>
+                        <span class="chip">AWS Athena</span>
+                        <span class="chip">AWS S3</span>
+                        <span class="chip">AWS ECS</span>
+                        <span class="chip">AWS Glue</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">GitHub Actions</span>
+                        <span class="chip">CI/CD</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PySpark</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Git/GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Statistical Methods</h3>
+                    <div class="skill-chips">
+                        <span class="chip">GLMs</span>
+                        <span class="chip">GAMs</span>
+                        <span class="chip">Survival Analysis</span>
+                        <span class="chip">Markov Chains</span>
+                        <span class="chip">Time Series</span>
+                        <span class="chip">Bayesian Methods</span>
+                        <span class="chip">Causal Inference</span>
                     </div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Data Pipelines</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Feature Engineering</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">ETL/ELT</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Hadoop Ecosystem</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Sports Analytics</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Player Segmentation</span>
+                        <span class="chip">Recruitment Modelling</span>
+                        <span class="chip">Performance Metrics</span>
+                        <span class="chip">Event Data Analysis</span>
+                        <span class="chip">Demand Forecasting</span>
+                        <span class="chip">Participation Propensity</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h3 class="skill-group-title">Tools &amp; Platforms</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Jira</span>
+                        <span class="chip">Confluence</span>
+                        <span class="chip">GitHub</span>
+                        <span class="chip">Tableau</span>
+                        <span class="chip">Streamlit</span>
+                        <span class="chip">Hadoop</span>
+                        <span class="chip">Spark MLlib</span>
+                        <span class="chip">Claude Code</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Education -->
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Featured AI Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Commercial Data Feature Store</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Scalable feature store architecture for England Rugby's analytics pipeline, processing ticket sales, revenue, and engagement data using containerized Python services on AWS ECS.</p>
-                        <div class="project-tech">
-                            <span class="tech">Python</span>
-                            <span class="tech">Docker</span>
-                            <span class="tech">AWS ECS</span>
-                            <span class="tech">Feature Store</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> Centralized data access for all business KPIs with 99.9% uptime
-                        </div>
-                    </div>
+            <span class="section-label">Background</span>
+            <h2 class="section-heading">Education</h2>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-year">2018 – 2021</div>
+                    <h3 class="edu-degree">MSc Theoretical Physics</h3>
+                    <p class="edu-institution">King's College London</p>
+                    <p class="edu-note">Dissertation: deep neural networks for Higgs boson signal classification from CERN collision data</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Customer Growth Prediction Model</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Gradient boosted classification model using Spark MLlib to identify high-potential customers for personalized experiences at Barclays.</p>
-                        <div class="project-tech">
-                            <span class="tech">Spark MLlib</span>
-                            <span class="tech">PySpark</span>
-                            <span class="tech">Gradient Boosting</span>
-                            <span class="tech">Hadoop</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> £40M expected revenue uplift through targeted customer strategies
-                        </div>
-                    </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year">2012 – 2015</div>
+                    <h3 class="edu-degree">BSc Hons Physics</h3>
+                    <p class="edu-institution">University of Hertfordshire</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Marketing Effectiveness Neural Network</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Recurrent Neural Network with attention mechanism analyzing marketing channel effectiveness and customer communication sequences.</p>
-                        <div class="project-tech">
-                            <span class="tech">TensorFlow</span>
-                            <span class="tech">RNN</span>
-                            <span class="tech">Attention Mechanism</span>
-                            <span class="tech">Deep Learning</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> Optimized marketing spend allocation across channels
-                        </div>
-                    </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year">2025</div>
+                    <h3 class="edu-degree">MLOps Specialisation</h3>
+                    <p class="edu-institution">Duke University / Coursera</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Higgs Boson Detection AI</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Physics-informed machine learning model for particle physics event classification, filtering billions of collision events to identify Higgs boson signals.</p>
-                        <div class="project-tech">
-                            <span class="tech">Machine Learning</span>
-                            <span class="tech">Signal Processing</span>
-                            <span class="tech">Physics Simulation</span>
-                            <span class="tech">Classification</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> MSc project demonstrating AI applications in fundamental physics
-                        </div>
-                    </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year">2023</div>
+                    <h3 class="edu-degree">Advanced Deep Learning (Keras)</h3>
+                    <p class="edu-institution">DataCamp</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Customer Transition Forecasting</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Markov chain implementation for predicting customer behavior transitions and optimizing acquisition/retention strategies.</p>
-                        <div class="project-tech">
-                            <span class="tech">Markov Chains</span>
-                            <span class="tech">PySpark</span>
-                            <span class="tech">Forecasting</span>
-                            <span class="tech">Statistical Modeling</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> Enhanced customer strategy decision-making with predictive insights
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Real-time Risk Detection System</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Key Risk Indicator model for automated anomaly detection in financial advice, reducing manual review costs through intelligent flagging.</p>
-                        <div class="project-tech">
-                            <span class="tech">Anomaly Detection</span>
-                            <span class="tech">Risk Modeling</span>
-                            <span class="tech">Real-time Processing</span>
-                            <span class="tech">Dashboard</span>
-                        </div>
-                        <div class="project-impact">
-                            <strong>Impact:</strong> Automated risk monitoring with cost-effective review processes
-                        </div>
-                    </div>
+                <div class="edu-card reveal">
+                    <div class="edu-year">2022</div>
+                    <h3 class="edu-degree">Deep Learning &amp; Reinforcement Learning</h3>
+                    <p class="edu-institution">Coursera</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Ready to build AI solutions?</h3>
-                    <p>I'm actively seeking AI Engineer opportunities where I can apply my data science expertise to build scalable, production-ready AI systems.</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:l.a.c.mcdonald@gmail.com">l.a.c.mcdonald@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <a>Available Upon Request</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <span>London, United Kingdom</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192" target="_blank">Connect with me</a>
-                            </div>
-                        </div>
+            <div class="contact-layout">
+                <div class="contact-left reveal">
+                    <span class="section-label section-label--light">Get In Touch</span>
+                    <h2 class="section-heading section-heading--light">Let's talk sport &amp; data</h2>
+                    <p class="contact-intro">Open to conversations about sports analytics roles, research collaborations, and PhD opportunities. Drop me a message and I'll get back to you.</p>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192/" target="_blank" rel="noopener" class="contact-social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/lm12abh" target="_blank" rel="noopener" class="contact-social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
+                <div class="contact-form-wrap reveal">
+                    <form id="contactForm" novalidate>
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g. Sports analytics role">
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or collaboration..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -564,22 +460,20 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2025 Laurence McDonald. All rights reserved.</p>
+                <p class="footer-name">Laurence McDonald</p>
+                <p class="footer-role">Sports Data Scientist · London</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/lm12abh" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#contact" aria-label="Contact">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-                <div class="footer-right">
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/laurence-mcdonald-32a33192" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/lm12abh/ResearchDevelopment" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:l.a.c.mcdonald@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
+                <p class="footer-copy">&copy; 2026 Laurence McDonald</p>
             </div>
         </div>
     </footer>
